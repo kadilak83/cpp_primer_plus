@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="c09_ex01" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="c09_ex01">
+         <Option output="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/c09_ex01" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 c09_ex01" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="c09_ex01/fast">
+         <Option output="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/c09_ex01" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 c09_ex01/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/build-c09_ex01-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/c09_ex01/golf.cxx">
+         <Option target="c09_ex01"/>
+      </Unit>
+      <Unit filename="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/c09_ex01/golf.hxx">
+         <Option target="c09_ex01"/>
+      </Unit>
+      <Unit filename="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/c09_ex01/main.cpp">
+         <Option target="c09_ex01"/>
+      </Unit>
+      <Unit filename="/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_09/c09_ex01/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

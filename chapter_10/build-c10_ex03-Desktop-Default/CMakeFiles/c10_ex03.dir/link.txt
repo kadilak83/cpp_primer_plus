@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/c10_ex03.dir/golf.cxx.o CMakeFiles/c10_ex03.dir/main.cpp.o  -o c10_ex03 -rdynamic 

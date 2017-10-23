@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/c10_ex07.dir/main.cpp.o CMakeFiles/c10_ex07.dir/betelgeusean.cxx.o  -o c10_ex07 -rdynamic 

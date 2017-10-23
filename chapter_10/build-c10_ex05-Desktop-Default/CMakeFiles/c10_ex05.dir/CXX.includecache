@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_10/c10_ex05/main.cpp
+iostream
+-
+cstdlib
+-
+stack.hxx
+/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_10/c10_ex05/stack.hxx
+
+/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_10/c10_ex05/stack.cxx
+stack.hxx
+/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_10/c10_ex05/stack.hxx
+
+/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_10/c10_ex05/stack.hxx
+

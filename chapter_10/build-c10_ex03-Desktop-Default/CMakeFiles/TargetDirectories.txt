@@ -1,0 +1,3 @@
+/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_10/build-c10_ex03-Desktop-Default/CMakeFiles/rebuild_cache.dir
+/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_10/build-c10_ex03-Desktop-Default/CMakeFiles/edit_cache.dir
+/home/kadzimar/cpp_competence/devcomp_cpp_junior/kadzimar/chapter_10/build-c10_ex03-Desktop-Default/CMakeFiles/c10_ex03.dir

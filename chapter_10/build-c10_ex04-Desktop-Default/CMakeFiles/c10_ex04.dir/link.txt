@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/c10_ex04.dir/main.cpp.o CMakeFiles/c10_ex04.dir/sales.cxx.o  -o c10_ex04 -rdynamic 

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/c10_ex08.dir/main.cpp.o  -o c10_ex08 -rdynamic 

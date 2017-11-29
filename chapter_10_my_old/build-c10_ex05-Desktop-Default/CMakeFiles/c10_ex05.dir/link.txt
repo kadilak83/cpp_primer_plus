@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/c10_ex05.dir/main.cpp.o CMakeFiles/c10_ex05.dir/stack.cxx.o  -o c10_ex05 -rdynamic 

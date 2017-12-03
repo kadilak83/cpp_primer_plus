@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <cstring>
+#include "golf.h"
+
+Golf::Golf(const char * name, int hc){
+    strncpy(fullname, name, LIMIT);
+    handicap = hc;
+}
+
+Golf Golf::setGolf(){
+
+  std::cout << "Give full name of player: ";
+  char name[LIMIT];
+  int hc;
+  if (!std::cin.getline(name, LIMIT) || strcmp(name,"")==0){
+    throw std::range_error("Empty input full name");
+  }
+
+  std::cout << "Give a handicap of player: ";
+  if(!(std::cin >> hc)){
+    throw std::range_error("Wrong value of handicap, only numbers");
+  }
+
+  Golf golf =  Golf(name, hc);
+  return golf;
+}
+
+void Golf::setHandicap(int hc){
+  handicap = hc;
+}
+
+void Golf::showGolf() const{
+  std::cout << "Player name: " << fullname << "; handicap: " << handicap << std::endl;
+}

@@ -16,7 +16,8 @@ private:
     Item *items; // holds stack items
     int top; // index for top stack item
 public:
-    Stack(int size=10);
+    explicit Stack(int size=10);
+    ~Stack();
     bool isEmpty() const;
     bool isFull() const;
     // push() returns false if stack already is full, true otherwise

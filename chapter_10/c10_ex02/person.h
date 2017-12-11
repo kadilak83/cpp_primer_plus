@@ -9,7 +9,7 @@ class Person {
         char fname[LIMIT];
     public:
         Person() {lname = ""; fname[0] = '\0'; }
-        Person(const std::string & ln, const char * fn = "Heyyou");
+        explicit Person(const std::string & ln, const char * fn = "Heyyou");
         void Show() const;
         void FormalShow() const;
 };

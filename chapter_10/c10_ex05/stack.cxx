@@ -6,6 +6,11 @@ Stack::Stack(int size)
     top = 0;
 }
 
+Stack::~Stack()
+{
+    delete[] items;
+}
+
 bool Stack::isEmpty() const
 {
     return top == 0;

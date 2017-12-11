@@ -30,12 +30,7 @@ int main() {
   account_john.show();
   try{
     account_john.deposit(5420);
-  } catch (std::range_error &e){
-      std:: cout << e.what() << std::endl;
-      return EXIT_FAILURE;
-  }
-  account_john.show();
-  try{
+    account_john.show();
     account_john.withdraw(410);
   } catch (std::range_error &e){
       std:: cout << e.what() << std::endl;

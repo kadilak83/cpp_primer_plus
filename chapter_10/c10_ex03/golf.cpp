@@ -3,9 +3,13 @@
 #include <cstring>
 #include "golf.h"
 
-Golf::Golf(const char * name, int hc){
-    strncpy(fullname, name, LIMIT);
-    handicap = hc;
+Golf::Golf(const char * name, int hc):handicap(hc){
+    if(strlen(_name) < LIMIT){
+        strcpy(fullname, name);
+    }
+    else {
+        strncpy(fullname, name, LIMIT - 1);
+    }
 }
 
 Golf Golf::setGolf(){
@@ -22,8 +26,7 @@ Golf Golf::setGolf(){
     throw std::range_error("Wrong value of handicap, only numbers");
   }
 
-  Golf golf =  Golf(name, hc);
-  return golf;
+  return Golf(name, hc);
 }
 
 void Golf::setHandicap(int hc){

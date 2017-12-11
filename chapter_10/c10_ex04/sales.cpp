@@ -33,8 +33,7 @@ namespace SALES
                 throw std::range_error("Wrong value of score, only numbers");
             }
         }
-        Sales s = Sales(sales_values, QUARTERS);
-        return s;
+        return Sales(sales_values, QUARTERS);
     }
 
     void Sales::showSales() const {

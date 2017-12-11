@@ -8,7 +8,7 @@ private:
     char name[LIMIT];
     int ci;
 public:
-    Plorg(const char *_name = "Plorga");
+    explicit Plorg(const char *_name = "Plorga");
     void setCI(int _ci);
     void report() const;
 };

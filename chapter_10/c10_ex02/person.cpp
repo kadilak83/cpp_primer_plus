@@ -3,9 +3,8 @@
 #include <iostream>
 #include "person.h"
 
-Person::Person(const std::string & ln, const char * fn)
+Person::Person(const std::string & ln, const char * fn):lname(ln)
 {
-    lname = ln;
     strncpy(fname, fn, LIMIT);
 }
 

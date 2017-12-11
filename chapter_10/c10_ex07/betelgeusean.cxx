@@ -4,7 +4,6 @@
 
 Plorg::Plorg(const char * _name)
 {
-    strncpy(name, _name, LIMIT);
     if(strlen(_name) < LIMIT){
         strcpy(name, _name);
     }

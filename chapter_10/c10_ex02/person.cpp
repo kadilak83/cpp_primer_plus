@@ -5,7 +5,10 @@
 
 Person::Person(const std::string & ln, const char * fn):lname(ln)
 {
-    strncpy(fname, fn, LIMIT);
+    strncpy(fname, fn, LIMIT - 1);
+    if(strlen(fn) >= LIMIT){
+        fname[LIMIT-1] = '\0';
+    }
 }
 
 void Person::Show() const

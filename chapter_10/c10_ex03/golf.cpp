@@ -4,11 +4,9 @@
 #include "golf.h"
 
 Golf::Golf(const char * name, int hc):handicap(hc){
-    if(strlen(_name) < LIMIT){
-        strcpy(fullname, name);
-    }
-    else {
-        strncpy(fullname, name, LIMIT - 1);
+    strncpy(fullname, name, LIMIT - 1);
+    if(strlen(name) >= LIMIT){
+        fullname[LIMIT-1] = '\0';
     }
 }
 

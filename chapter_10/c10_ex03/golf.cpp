@@ -5,9 +5,7 @@
 
 Golf::Golf(const char * name, int hc):handicap(hc){
     strncpy(fullname, name, LIMIT - 1);
-    if(strlen(name) >= LIMIT){
-        fullname[LIMIT-1] = '\0';
-    }
+    fullname[LIMIT-1] = '\0';
 }
 
 Golf Golf::setGolf(){

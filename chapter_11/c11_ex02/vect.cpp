@@ -1,15 +1,15 @@
 // vect.cpp -- methods for the Vector class
 #include <cmath>
 #include "vect.h"
-// includes <iostream>
-using std::sqrt;
-using std::sin;
-using std::cos;
-using std::atan;
-using std::atan2;
-using std::cout;
+
 namespace VECTOR
 {
+    using std::sqrt;
+    using std::sin;
+    using std::cos;
+    using std::atan;
+    using std::atan2;
+    using std::cout;
     // compute degrees in one radian
     const double Rad_to_deg = 45.0 / atan(1.0);    // should be about 57.2957795130823
 
@@ -28,10 +28,8 @@ namespace VECTOR
     }
 
     // public methods
-    Vector::Vector()                            // default constructor
+    Vector::Vector()
     {
-        x = y = 0.0;
-        mode = RECT;
     }
 
     // construct vector from rectangular coordinates if form is r
@@ -66,11 +64,6 @@ namespace VECTOR
             mode = RECT;
         }
     }
-
-    Vector::~Vector()
-    {
-    }
-    // destructor
 
     void Vector::polar_mode()
     {

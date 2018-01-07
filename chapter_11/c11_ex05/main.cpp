@@ -14,7 +14,11 @@ using namespace std;
 
 int main()
 {
+    using STONEWT::Stonewt;
     std::cout << std::boolalpha;
+    Stonewt st_obj_0 = Stonewt();
+    cout << "Stonewt_0: " << endl;
+    cout << st_obj_0;
 
     Stonewt st_obj_1 = Stonewt(13.9);
     cout << "Stonewt_1: " << endl;

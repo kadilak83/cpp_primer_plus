@@ -10,9 +10,9 @@ namespace VECTOR
     public:
         enum Mode {RECT, POL}; // RECT for rectangular, POL for Polar modes
     private:
-        double x;        // horizontal value
-        double y;        // vertical value
-        Mode mode;       // RECT or POL
+        double x = 0.0;        // horizontal value
+        double y = 0.0;        // vertical value
+        Mode mode = RECT;       // RECT or POL
 
         // private methods for setting values
         void set_x(double mag, double ang);
@@ -22,7 +22,7 @@ namespace VECTOR
         Vector();
         Vector(double n1, double n2, Mode form = RECT);
         void reset(double n1, double n2, Mode form = RECT);
-        ~Vector();
+        ~Vector()=default;
         double xval() const {return x;}        // report x value
         double yval() const {return y;}        // report y value
         double magval() const {return std::sqrt(x * x + y * y);}    // report magnitude

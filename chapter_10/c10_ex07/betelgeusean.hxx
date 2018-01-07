@@ -6,7 +6,7 @@ class Plorg
 private:
     static const int LIMIT = 20;
     char name[LIMIT];
-    int ci;
+    int ci = 50;
 public:
     explicit Plorg(const char *_name = "Plorga");
     void setCI(int _ci);

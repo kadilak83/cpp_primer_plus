@@ -4,11 +4,8 @@
 
 Plorg::Plorg(const char * _name)
 {
-    strncpy(name, _name, LIMIT - 1);
-    if(strlen(_name) >= LIMIT){
-        name[LIMIT-1] = '\0';
-    }
-    ci = 50;
+    strncpy(fullname, name, LIMIT - 1);
+    fullname[LIMIT-1] = '\0';
 }
 
 void Plorg::setCI(int _ci)

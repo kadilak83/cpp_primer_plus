@@ -2,28 +2,18 @@
 #include "stonewt.h"
 
 
-Stonewt::Stonewt(double lbs)
+namespace STONEWT {
+
+Stonewt::Stonewt(double lbs): pounds(lbs)
 {
     stone = int (lbs) / Lbs_per_stn;    // integer division
     pds_left = int (lbs) % Lbs_per_stn + lbs - int(lbs);
-    pounds = lbs;
 }
 
 // construct Stonewt object from stone, double values
-Stonewt::Stonewt(int stn, double lbs)
+Stonewt::Stonewt(int stn, double lbs): stone(stn), pds_left(lbs)
 {
-    stone = stn;
-    pds_left = lbs;
     pounds = stn * Lbs_per_stn +lbs;
-}
-
-Stonewt::Stonewt()      // default constructor, wt = 0
-{
-    stone = pounds = pds_left = 0;
-}
-
-Stonewt::~Stonewt()
-{
 }
 
 // operator overloading
@@ -60,3 +50,4 @@ std::ostream & operator<<(std::ostream & os, const Stonewt & st)
     return os;
 }
 
+}

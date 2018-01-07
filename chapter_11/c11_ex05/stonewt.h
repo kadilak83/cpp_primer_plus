@@ -3,18 +3,20 @@
 #define STONEWT_H_
 #include <iostream>
 
+namespace STONEWT {
+
 class Stonewt
 {
     private:
         enum {Lbs_per_stn = 14};        // pounds per stone
-        int stone;                      // whole stones
-        double pds_left;                // fractional pounds
-        double pounds;                  // entire weight in pounds
+        int stone = 0;                      // whole stones
+        double pds_left = 0;                // fractional pounds
+        double pounds = 0;                  // entire weight in pounds
     public:
-        Stonewt(double lbs);            // constructor for double pounds
+        explicit Stonewt(double lbs);            // constructor for double pounds
         Stonewt(int stn, double lbs);   // constructor for stone, lbs
-        Stonewt();                      // default constructor
-        ~Stonewt();
+        Stonewt() = default;                      // default constructor
+        ~Stonewt() = default;
 
         // operator overloading
         bool operator==(const Stonewt &st) const {return pounds == st.pounds;}
@@ -32,4 +34,5 @@ class Stonewt
         friend Stonewt operator*(double n, const Stonewt & a);
         friend std::ostream & operator<<(std::ostream & os, const Stonewt & st);
 };
+}
 #endif

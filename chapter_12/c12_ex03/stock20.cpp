@@ -6,19 +6,19 @@ namespace STOCK20 {
 
 Stock::Stock()
 {
-    company = new char[1];
-    company[0] = '\0';
+    company = std::unique_ptr<char[]>(new char[1]);
+    company.get()[0] = '\0';
 }
 
 Stock::Stock(const char * co, long n, double pr): share_val(pr)
 {
-    company = new char[std::strlen(co) + 1];
-    std::strcpy(company, co);
+    company =  std::unique_ptr<char[]>(new char[std::strlen(co) + 1]);
+    std::strcpy(company.get(), co);
 
     if (n < 0)
     {
         std::cout << "Number of shares can’t be negative; "
-                  << company << " shares set to 0.\n";
+                  << company.get() << " shares set to 0.\n";
         shares = 0;
     }
     else
@@ -26,11 +26,6 @@ Stock::Stock(const char * co, long n, double pr): share_val(pr)
         shares = n;
     }
     set_tot();
-}
-
-Stock::~Stock()
-{
-    delete[] company;
 }
 
 void Stock::buy(long num, double price)
@@ -91,7 +86,7 @@ std::ostream & operator<<(std::ostream & os, const Stock & s)
     ios_base::fmtflags orig = os.setf(ios_base::fixed, ios_base::floatfield);
     std::streamsize prec = os.precision(3);
 
-    os << "Company: " << s.company << " Shares: " << s.shares << endl;
+    os << "Company: " << s.company.get() << " Shares: " << s.shares << endl;
     os << " Share Price: $" << s.share_val;
 
     // set format to #.##

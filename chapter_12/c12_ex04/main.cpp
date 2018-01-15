@@ -15,9 +15,10 @@ int main()
     using std::endl;
     using STACK::Stack;
     using STACK::Item;
-    Stack st_1 = Stack();
-    Stack st_2 = Stack(20);
+    Stack st_1, st_2, st_3, st_4;
 
+    st_1 = Stack();
+    st_2 = Stack(20);
     cout << "New empty stacks" << endl;
     cout << "stack_1: " << st_1 << endl;
     cout << "stack_2: " << st_2 << endl;
@@ -58,7 +59,7 @@ int main()
     cout << "stack_2: " << st_2 << endl;
 
     cout << "New stack_3 - copy constructor with stack_1" << endl;
-    Stack st_3 = Stack(st_1);
+    st_3 = Stack(st_1);
     cout << "stack_3: " << st_3 << endl;
     st_3.pop(st_item);
     cout << "stack_3 pop: " << st_item << endl;
@@ -75,6 +76,21 @@ int main()
     cout << "Push on stack_3" << endl;
     st_3.push(123);
     cout << "stack_3: " << st_3 << endl;
+    cout << "stack_2: " << st_2 << endl;
+
+    cout << "stack_4 moved from stack3" << endl;
+    cout << "stack_3: " << st_3 << endl;
+    st_4 = std::move(st_3);
+    cout << "moved 3 to 4" << endl;
+    cout << "stack_5: " << st_4 << endl;
+    cout << "stack_3: " << st_3 << endl;
+
+    cout << "Swap on stacks" << endl;
+    cout << "stack_1: " << st_1 << endl;
+    cout << "stack_2: " << st_2 << endl;
+    std::swap(st_1, st_2);
+    cout << "Swap" << endl;
+    cout << "stack_1: " << st_1 << endl;
     cout << "stack_2: " << st_2 << endl;
 
     return EXIT_SUCCESS;

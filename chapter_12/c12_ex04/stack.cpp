@@ -7,8 +7,24 @@ using namespace std;
 
 Stack::Stack(int n): size(n)
 {
-    size = n;
     pitems = new Item[size];
+}
+
+Stack::Stack(const Stack & st): size(st.size), top(st.top)
+{
+    pitems = new Item[size];
+    for(int i=0; i<top; ++i)
+    {
+        pitems[i] = st.pitems[i];
+    }
+}
+
+Stack::Stack(Stack && st): size(st.size), top(st.top)
+{
+    pitems = st.pitems;
+    st.pitems = nullptr;
+    st.size = 10;
+    st.top = 0;
 }
 
 bool Stack::isempty() const
@@ -52,17 +68,6 @@ Stack::~Stack()
     delete [] pitems;
 }
 
-Stack::Stack(const Stack & st)
-{
-    size = st.size;
-    top = st.top;
-    pitems = new Item[size];
-    for(int i=0; i<top; ++i)
-    {
-        pitems[i] = st.pitems[i];
-    }
-}
-
 Stack & Stack::operator=(const Stack & st)
 {
     if (this != &st)
@@ -75,6 +80,22 @@ Stack & Stack::operator=(const Stack & st)
         {
             pitems[i] = st.pitems[i];
         }
+    }
+
+    return * this;
+}
+
+Stack & Stack::operator=(Stack && st)
+{
+    if (this != &st)
+    {
+        delete [] pitems;
+        pitems = st.pitems;
+        size = st.size;
+        top = st.top;
+        st.pitems = nullptr;
+        st.size = 10;
+        st.top = 0;
     }
 
     return * this;

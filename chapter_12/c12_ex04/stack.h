@@ -14,12 +14,15 @@ private:
 public:
     explicit Stack(int n = 10);
     Stack(const Stack & st);
+    Stack(Stack && st);
     ~Stack();
     bool isempty() const;
     bool isfull() const;
     bool push(const Item & item);
     bool pop(Item & item);
     Stack & operator=(const Stack & st);
+    Stack & operator=(Stack && st);
+
     void show() const;
     friend std::ostream & operator<<(std::ostream & os, const Stack & st);
 };
